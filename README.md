@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 3D Scene Visualization Challenge
 
 Welcome to our technical challenge! In this exercise, you are tasked to create a 3D visualization tool using the dependencies provided in the `package.json`. Your application will render a 3D scene given a JSON input containing information about points and cuboids.
@@ -58,3 +59,7 @@ Welcome to our technical challenge! In this exercise, you are tasked to create a
 - Take into account that you should be able to explain, replicate, defend and justify the code you write. If you need to use code generators for any part of your solution, please specify which part and why it was necessary.
 - While leveraging external resources is allowed, candidates are expected to navigate through the challenge primarily with their knowledge and skills.
 - If external resources were consulted for specific solutions, problem-solving, or coding implementations during the challenge, candidates are required to explicitly mention these instances.
+=======
+# 3d_rendering
+3d rendering for data points and cuboids
+>>>>>>> dd8fc9eae43c02b8d4c38ff4d4828f419882c89f
