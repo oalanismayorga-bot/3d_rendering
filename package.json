@@ -2,9 +2,15 @@
   "name": "pandaset-challenge",
   "version": "1.0.0",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url /3d_rendering/",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
   "devDependencies": {
     "@types/three": "^0.156.0",
     "buffer": "^5.5.0||^6.0.0",
+    "gh-pages": "^6.0.0",
     "parcel": "^2.9.3",
     "typescript": "^5.2.2"
   },
