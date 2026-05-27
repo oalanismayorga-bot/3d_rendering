@@ -46,9 +46,12 @@ export function PointCloud({ points }: Props) {
       return { positions: new Float32Array(0), colors: new Float32Array(0) }
     }
 
-    const zValues = points.map(p => p[2])
-    const zMin = Math.min(...zValues)
-    const zMax = Math.max(...zValues)
+    let zMin = Infinity
+    let zMax = -Infinity
+    for (const [, , z] of points) {
+      if (z < zMin) zMin = z
+      if (z > zMax) zMax = z
+    }
 
     const positions = new Float32Array(points.length * 3)
     const colors = new Float32Array(points.length * 3)
